@@ -1,0 +1,110 @@
+/* Ligne de recherche : champ + bouton côte à côte */
+.form-recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.champ-recherche {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.champ-recherche input[type="text"] {
+  width: 100%;
+  padding: 0.7rem 2.5rem 0.7rem 1rem; /* place à droite pour la croix */
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* La croix est posée à l'intérieur du champ */
+.champ-recherche .annuler-recherche,
+.champ-recherche button.annuler-recherche[type="reset"] {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--bordeaux);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.champ-recherche .annuler-recherche:hover {
+  background: var(--bordeaux);
+  color: var(--papier);
+}
+
+.form-recherche button[type="submit"] {
+  padding: 0.7rem 1.4rem;
+  white-space: nowrap;
+}
+
+/* Titres de section avec filet doré de chaque côté */
+.titre-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 1.25rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.titre-section::before,
+.titre-section::after {
+  content: "";
+  flex: 1;
+  border-top: 2px dotted var(--or);
+}
+
+/* Utilisateurs en pastilles */
+.liste-utilisateurs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.utilisateur-puce {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1rem 0.4rem 0.4rem;
+  background: var(--papier);
+  border: 2px dashed var(--or);
+  border-radius: 999px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.utilisateur-puce:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+  background: var(--bordeaux);
+  color: var(--papier);
+}
+
+.utilisateur-initiale {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bordeaux);
+  color: var(--or);
+  border: 2px solid var(--or);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}

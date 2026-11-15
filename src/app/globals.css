@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+:root {
+  --creme: #f6ecd9;
+  --papier: #fffaf0;
+  --bordeaux: #7b1e2b;
+  --or: #c9a227;
+  --brun: #3b2a20;
+}
+
+body {
+  background: var(--creme);
+  color: var(--brun);
+  font-family: var(--font-ticket), "Courier New", monospace;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-titres), Georgia, serif;
+  color: var(--bordeaux);
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+a {
+  color: var(--bordeaux);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Champ de recherche et boutons généraux */
+input[type="text"] {
+  padding: 0.5rem 0.75rem;
+  border: 2px dashed var(--or);
+  border-radius: 6px;
+  background: var(--papier);
+  color: var(--brun);
+  font-family: inherit;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-style: solid;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--bordeaux);
+  color: var(--papier);
+  font-family: inherit;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: var(--brun);
+}
+
+.BackButton {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
+
+.ListePopular {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+  

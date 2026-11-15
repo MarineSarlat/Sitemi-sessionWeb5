@@ -1,0 +1,90 @@
+.page-details {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.BackButton {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+
+
+.details-carte {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+  padding: 2.5rem 3rem;
+  background: var(--papier);
+  border: 2px dashed var(--or);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 rgba(201, 162, 39, 0.25);
+}
+
+.details-affiche {
+  width: 240px;
+  align-self: flex-start;
+  border-radius: 6px;
+  border: 1px solid var(--brun);
+}
+
+.details-infos {
+  flex: 1;
+  min-width: 260px;
+}
+
+.details-infos h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.4rem;
+  line-height: 1.1;
+}
+
+.details-annee {
+  margin: 0 0 1.25rem;
+  letter-spacing: 0.15em;
+  color: var(--or);
+  font-weight: bold;
+}
+
+
+.details-statut {
+  display: inline-block;
+  margin-bottom: 1.75rem;
+  padding: 0.35rem 1rem;
+  border: 2px solid var(--bordeaux);
+  border-radius: 999px;
+  color: var(--bordeaux);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.details-statut.terminee {
+  background: var(--bordeaux);
+  color: var(--or);
+}
+
+.details-synopsis {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+
+.details-trailer .titre-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 0 2.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.details-trailer .titre-section::before,
+.details-trailer .titre-section::after {
+  content: "";
+  flex: 1;
+  border-top: 2px dotted var(--or);
+}

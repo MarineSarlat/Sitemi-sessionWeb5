@@ -1,0 +1,88 @@
+.page-utilisateur {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem; 
+}
+
+.BackButton {
+  display: inline-block;
+  margin-bottom: 2.5rem; 
+}
+
+
+.entete-utilisateur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 0 0 3.5rem;
+  padding: 2.5rem 3rem;
+  background: var(--papier);
+  border: 2px dashed var(--or);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 rgba(201, 162, 39, 0.25);
+}
+
+.entete-infos h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2.4rem;
+  line-height: 1.1;
+}
+
+.entete-likes {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--bordeaux);
+}
+
+
+.entete-utilisateur .bouton-favori,
+.entete-utilisateur button.bouton-favori[type="submit"] {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  background: var(--bordeaux);
+  color: var(--papier);
+  border: 2px solid var(--bordeaux);
+  outline: none;
+}
+
+.entete-utilisateur .bouton-favori:hover,
+.entete-utilisateur button.bouton-favori[type="submit"]:hover {
+  background: var(--brun);
+  border-color: var(--brun);
+}
+
+.entete-utilisateur .bouton-favori:focus-visible {
+  outline: 2px solid var(--or);
+  outline-offset: 2px;
+}
+
+.entete-utilisateur .bouton-favori.aime,
+.entete-utilisateur button.bouton-favori.aime[type="submit"] {
+  color: var(--or);
+}
+
+
+.titre-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 0 2.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.titre-section::before,
+.titre-section::after {
+  content: "";
+  flex: 1;
+  border-top: 2px dotted var(--or);
+}
+
+
+.page-utilisateur .ListePopular {
+  gap: 2.5rem;
+}

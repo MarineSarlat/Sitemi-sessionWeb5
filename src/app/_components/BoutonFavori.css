@@ -1,0 +1,32 @@
+.bouton-favori,
+button.bouton-favori[type="submit"] {
+  margin-top: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  color: var(--bordeaux);
+  border: 1px solid var(--bordeaux);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.bouton-favori:hover,
+button.bouton-favori[type="submit"]:hover {
+  background: var(--bordeaux);
+  color: var(--papier);
+}
+
+.bouton-favori.aime,
+button.bouton-favori.aime[type="submit"] {
+  background: var(--bordeaux);
+  color: var(--or);
+  font-weight: bold;
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

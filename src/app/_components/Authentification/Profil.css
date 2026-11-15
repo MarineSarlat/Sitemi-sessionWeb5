@@ -1,0 +1,36 @@
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 3px double var(--bordeaux);
+  margin-bottom: 1.5rem;
+}
+
+.profil-initiales {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bordeaux);
+  color: var(--or);
+  border: 2px solid var(--or);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profil-deconnexion {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--bordeaux);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--bordeaux);
+  cursor: pointer;
+}
+
+.profil-deconnexion:hover {
+  background: var(--bordeaux);
+  color: var(--papier);
+}
